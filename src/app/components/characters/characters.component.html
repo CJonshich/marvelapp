@@ -3,3 +3,12 @@
 <div class="card-columns">
   <app-character [character]="character" *ngFor="let character  of characters "></app-character>
 </div>
+<app-paginator 
+  (goPrev)="goPrevious()" 
+  (goNext)="goNext()" 
+  (goPage)="goPage($event)" 
+  [page]="page" 
+  [total]="total" 
+  [limit]="limit" 
+  [pagesToShow]="8">
+</app-paginator>

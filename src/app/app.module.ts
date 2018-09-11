@@ -10,6 +10,7 @@ import { AppRoutingModule } from './app.routes';
 import { CharactersComponent } from './components/characters/characters.component';
 import { CharacterComponent } from './components/character/character.component';
 import { ImagePipe } from './pipes/image.pipe';
+import { PaginatorComponent } from './components/shared/paginator/paginator.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { ImagePipe } from './pipes/image.pipe';
     HomeComponent,
     CharactersComponent,
     CharacterComponent,
-    ImagePipe
+    ImagePipe,
+    PaginatorComponent
   ],
   imports: [
     BrowserModule,
