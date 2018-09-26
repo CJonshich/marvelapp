@@ -25,8 +25,8 @@ export class CharactersComponent implements OnInit {
       .subscribe(
         (data: any) => {
           console.log(data);
-          this.characters = data.data.results;
-          this.total = data.data.total;
+          this.characters = data.results;
+          this.total = data.total;
         },
         (error) => {
           console.log(error);
